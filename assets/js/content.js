@@ -1,4 +1,4 @@
-const data = Array.from(Array(37).keys());
+const data = Array.from(Array(35).keys());
 
 for (let i = 0; i < data.length; i++) {
   const num = fibonacci(data[i]);

@@ -3,3 +3,8 @@
 body {
   font-family: "IBM Plex Sans Thai Looped", sans-serif;
 }
+
+img {
+  height: auto;
+  width: 100%;
+}
