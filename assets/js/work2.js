@@ -5,7 +5,7 @@ function fibonacci(num) {
 }
 
 window.addEventListener("load", () => {
-  const data2 = Array.from(Array(40).keys());
+  const data2 = Array.from(Array(50).keys());
   for (let i = 0; i < data.length; i++) {
     const num = fibonacci(data2[i]);
     console.log(num);
