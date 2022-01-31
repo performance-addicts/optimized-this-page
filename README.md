@@ -1,4 +1,4 @@
-# optimize-this-page
+# optimized-this-page
 
 Further opportunities
 Minify HTML, CSS, JS
