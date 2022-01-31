@@ -1,3 +1,5 @@
+// NEED TO BE REFACTOR TO USE A MORE PERFORMANT WAY TO DO THE SAME WORK
+
 const data = Array.from(Array(35).keys());
 
 for (let i = 0; i < data.length; i++) {
