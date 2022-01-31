@@ -1,5 +1,12 @@
-const data = Array.from(Array(1000000).keys());
+const data = Array.from(Array(37).keys());
 
 for (let i = 0; i < data.length; i++) {
-  console.log(i);
+  const num = fibonacci(data[i]);
+  console.log(num);
+}
+
+function fibonacci(num) {
+  if (num <= 1) return 1;
+
+  return fibonacci(num - 1) + fibonacci(num - 2);
 }
