@@ -3,6 +3,7 @@ const imgUrl =
 
 const img = document.createElement("img");
 img.src = imgUrl;
+img.id = "content";
 
 const content = document.querySelector(".content");
 content.appendChild(img);
