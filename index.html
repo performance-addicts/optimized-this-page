@@ -4,24 +4,19 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Test</title>
-    <script
-      src="https://code.jquery.com/jquery-3.2.1.js"
-      integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-      crossorigin="anonymous"
-    ></script>
-
-    <script src="./assets/js/work.js"></script>
-    <script src="https://cdn.com"></script>
+    <!-- THIS NEEDS TO REMOVED AS IT DOESN'T RESOLVE -->
+    <!-- <script src="https://cdn.com"></script> -->
+    <!-- PRECONNECT TO CRITICAL DOMAINS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://code.jquery.com" />
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" />
+    <link rel="preconnect" href="https://maxcdn.bootstrapcdn.com" />
+    <!-- ADD GOOGLE FONT PRECONNECT AND FONT CSS -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lobster&display=swap"
+      rel="stylesheet"
+    />
     <link
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
@@ -32,19 +27,34 @@
   </head>
   <body>
     <section>
+      <!-- REMOVED LAZY LOADING -->
+      <!-- ADD WIDTH AND HEIGHT -->
       <article>
         <img
           id="bill"
           src="https://www.fillmurray.com/600/600"
+          width="600"
+          height="600"
           alt="bill"
-          loading="lazy"
         />
       </article>
     </section>
     <h1>Hi!</h1>
     <section>
       <article>
-        <div class="content"></div>
+        <div class="content">
+          <!-- ADD IMAGE IN SOURCE RATHER THAN JS -->
+          <picture>
+            <source srcset="./images/image-avif.avif" type="image/avif" />
+            <source srcset="./images/image-webp.webp" type="image/webp" />
+            <img
+              src="./images/image-jpg.jpg"
+              width="982"
+              height="736"
+              alt="image"
+            />
+          </picture>
+        </div>
       </article>
     </section>
     <section>
@@ -59,7 +69,29 @@
         </div>
       </article>
     </section>
-    <script src="./assets/js/script.js"></script>
-    <script src="./assets/js/work2.js"></script>
+    <!-- REMOVE SCRIPT -->
+    <!-- <script src="./assets/js/script.js"></script> -->
+    <!-- USE MINIFIED JQUERY AND SLIM VERSION -- NO AJAX -->
+    <!-- MOVED FROM HEAD TO BODY -->
+
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+    <!-- MOVED WORK.JS SCRIPT TO BODY -->
+    <!-- MOVED CODE FROM WORK2 and WORK INTO WORK-FINAL.JS -->
+    <script defer src="./assets/js/work-final.js"></script>
+    <!-- <script src="./assets/js/work2.js"></script> -->
   </body>
 </html>
