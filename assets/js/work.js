@@ -12,9 +12,9 @@ function fibonacci(num) {
 }
 
 window.addEventListener("DOMContentLoaded", () => {
-  const data2 = Array.from(Array(45).keys());
+  const data2 = Array.from(Array(40).keys());
   for (let i = 0; i < data.length; i++) {
-    const num = fibonacci(data[i]);
+    const num = fibonacci(data2[i]);
     console.log(num);
   }
 });
