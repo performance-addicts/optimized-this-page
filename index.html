@@ -52,14 +52,18 @@
     <section>
       <!-- REMOVED LAZY LOADING -->
       <!-- ADD WIDTH AND HEIGHT -->
+      <!-- SELF HOST AND COMPRESS/TRANSCODE IMAGES -->
       <article>
-        <img
-          id="bill"
-          src="https://www.fillmurray.com/600/600"
-          width="600"
-          height="600"
-          alt="bill"
-        />
+        <picture>
+          <source srcset="./images/fill-murray.avif" type="image/avif" />
+          <source srcset="./images/fill-murray.webp" type="image/webp" />
+          <img
+            src="./images/fill-murray.jpeg"
+            width="600"
+            height="600"
+            alt="fill murray"
+          />
+        </picture>
       </article>
     </section>
     <h1>Hi!</h1>
