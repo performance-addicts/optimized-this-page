@@ -1,8 +1,8 @@
 {
   "runs": 1,
-  "location": "Dulles:Chrome",
-  "connectivity": "Cable",
+  "location": "ec2-us-east-1:Chrome",
+  "connectivity": "LTE",
   "blockAds": true,
-  "axe": 1,
-  "wappalyzer": 1
+  "mobile": 1,
+  "mobileDevice": "iPhone X"
 }
