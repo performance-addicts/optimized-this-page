@@ -1,0 +1,8 @@
+{
+  "runs": 1,
+  "location": "Dulles:Chrome",
+  "connectivity": "Cable",
+  "blockAds": true,
+  "axe": 1,
+  "wappalyzer": 1
+}
