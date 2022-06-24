@@ -13,7 +13,7 @@ jobs:
         with:
           apiKey: ${{ secrets.WPT_API_KEY }}
           urls: |
-            https://optimize-this-page.netlify.app/
-          label: 'GitHub Action Test'
+            https://optimized-this-page.netlify.app/
+          label: 'Optimized This Page'
           wptOptions: 'wpt-options.json'
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
