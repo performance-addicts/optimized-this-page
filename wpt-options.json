@@ -1,8 +1,9 @@
 {
   "runs": 1,
-  "location": "ec2-us-east-1:Chrome",
+  "location": "ec2-us-east-2:Chrome",
   "connectivity": "LTE",
   "blockAds": true,
   "mobile": 1,
-  "mobileDevice": "iPhone X"
+  "mobileDevice": "iPhone X",
+  "server": "https://speed.tapestry.support"
 }
