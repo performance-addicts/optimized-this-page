@@ -17,7 +17,7 @@ jobs:
       - name: WebPageTest
         uses: WPO-Foundation/webpagetest-github-action@main
         with:
-          apiKey: ${{ secrets.WPT_API_KEY }}
+          apiKey: ${{ secrets.WPT_API_KEY_TAPESTRY }}
           urls: |
             ${{ steps.netlify.outputs.url }}
           label: 'GitHub Action Test'
