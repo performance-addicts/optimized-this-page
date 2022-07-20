@@ -1,5 +1,6 @@
 {
   "runs": 1,
+  "location": "us-east-2",
   "connectivity": "LTE",
   "blockAds": true,
   "mobile": 1,
