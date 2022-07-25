@@ -1,6 +1,6 @@
 {
   "runs": 1,
-  "location": "us-east-2",
+  "location": "us-east-2:Chrome",
   "connectivity": "LTE",
   "blockAds": true,
   "mobile": 1,

@@ -1,0 +1,52 @@
+{
+  "audits": {
+    "service-worker": {
+      "score": 1
+    },
+    "first-contentful-paint": {
+      "score": 0,
+      "numericValue": 10000
+    },
+    "largest-contentful-paint": {
+      "score": 0,
+      "numericValue": 10000
+    },
+    "first-meaningful-paint": {
+      "score": 0,
+      "numericValue": 10000
+    },
+    "total-blocking-time": {
+      "score": 0,
+      "numericValue": 10000
+    },
+    "cumulative-layout-shift": {
+      "score": 0,
+      "numericValue": 10000
+    },
+    "interactive": {
+      "score": 0,
+      "numericValue": 10000
+    },
+    "dom-size": {
+      "score": 0,
+      "numericValue": 10000
+    }
+  },
+  "categories": {
+    "performance": {
+      "score": 0
+    },
+    "accessibility": {
+      "score": 0.85
+    },
+    "best-practices": {
+      "score": 0.6
+    },
+    "seo": {
+      "score": 0.75
+    },
+    "pwa": {
+      "score": 0.85
+    }
+  }
+}

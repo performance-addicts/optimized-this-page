@@ -1,0 +1,54 @@
+# This workflow tests a PRs build using lighthouse metrtic in order to ensure we do not have a regression.
+
+# You can adjust the behavior by modifying this file.
+# For more information, see:
+# https://github.com/marketplace/actions/web-performance-audits-with-lighthouse?version=v3.0.0
+# https://github.com/WebPageTest/webpagetest-api
+
+# name: WPT
+# on:
+#   pull_request:
+#     types: 
+#       - labeled
+
+# jobs:
+#   WPT:
+#     runs-on: ubuntu-latest
+#     steps:
+#       - name: Checkout
+#         uses: actions/checkout@v2
+        
+#       - name: WebPageTest
+#         uses: WPO-Foundation/webpagetest-github-action@main
+#         with:
+#           apiKey: ${{ secrets.WPT_API_KEY }}
+#           urls: |
+#             https://tapestry-coach-pwa-preproduction.layer0.link/
+#             https://tapestry-coach-pwa-preproduction.layer0.link/shop/women/view-all
+#             https://tapestry-coach-pwa-preproduction.layer0.link/products/soft-tabby-shoulder-bag/C4823.html?frp=C4823%20B4%2FBK
+#           label: 'GitHub Action Test'
+#           budget: '.github/tests/wpt-budgets.json'
+#           wptOptions: '.github/tests/wpt-options.json'
+#           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+
+on: [pull_request]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    name: WebPageTest Action
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+        
+      - name: WebPageTest
+        uses: WPO-Foundation/webpagetest-github-action@v.1.0.0
+        with:
+          apiKey: ${{ secrets.WPT_API_KEY }}
+          urls: |
+            https://google.com/
+            https://google.com/about
+          label: 'GitHub Action Test'
+          wptOptions: '.github/tests/wpt-options.json'
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
