@@ -1,7 +1,10 @@
 {
-    "runs": 1,
-    "server": "https://speed.tapestry.support",
-    "location": "us-east-2:Chrome",
-    "connectivity": "4G",
-    "blockAds": true
+  "runs": 1,
+  "location": "us-east-2:Chrome",
+  "connectivity": "LTE",
+  "blockAds": true,
+  "mobile": 1,
+  "mobileDevice": "iPhone X",
+  "server": "speed.tapestry.support",
+  "timeout": 60000
 }
