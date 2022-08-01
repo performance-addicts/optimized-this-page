@@ -1,9 +1,12 @@
 {
   "runs": 1,
   "location": "us-east-2:Chrome",
-  "connectivity": "LTE",
+  "connectivity": "4G",
   "blockAds": true,
   "mobile": 1,
-  "mobileDevice": "iPhone X",
+  "device": "iPhone X",
+  "video": true,
+  "timeout": 60000,
+  "htmlBody": true,
   "server": "https://speed.tapestry.support"
 }
