@@ -1,0 +1,11 @@
+{
+    "average": {
+        "firstView": {
+            "firstContentfulPaint": 1000,
+            "TTFB": 900,
+            "chromeUserTiming.CumulativeLayoutShift" : 0.02,
+            "chromeUserTiming.LargestContentfulPaint": 3500,
+            "TotalBlockingTime": 1200
+        }
+    }   
+}

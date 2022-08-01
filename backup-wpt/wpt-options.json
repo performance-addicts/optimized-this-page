@@ -1,0 +1,7 @@
+{
+    "runs": 1,
+    "server": "https://speed.tapestry.support",
+    "location": "us-east-2:Chrome",
+    "connectivity": "4G",
+    "blockAds": true
+}

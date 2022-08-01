@@ -8,18 +8,13 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
         
-      - name: Wait for the Netlify Preview
-        uses: jakepartusch/wait-for-netlify-action@v1.2
-        id: netlify
-        with:
-          site_name: 'optimized-this-page'
-
       - name: WebPageTest
-        uses: WPO-Foundation/webpagetest-github-action@main
+        uses: WPO-Foundation/webpagetest-github-action@v.1.0.0
         with:
           apiKey: ${{ secrets.WPT_API_KEY_TAPESTRY }}
           urls: |
-            ${{ steps.netlify.outputs.url }}
+            https://google.com/
+            https://google.com/about
           label: 'GitHub Action Test'
-          wptOptions: 'wpt-options.json'
+          wptOptions: '.github/tests/wpt-options.json'
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
