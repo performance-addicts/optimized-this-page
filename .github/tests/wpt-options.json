@@ -1,10 +1,12 @@
 {
   "runs": 1,
   "location": "us-east-2:Chrome",
-  "connectivity": "LTE",
+  "connectivity": "4G",
   "blockAds": true,
   "mobile": 1,
-  "mobileDevice": "iPhone X",
-  "server": "speed.tapestry.support",
-  "timeout": 60000
+  "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 15_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/15.4 Mobile/15E148 Safari/604.1",
+  "viewportheight": 390,
+  "viewportwidth": 844,
+  "timeout": 60000,
+  "htmlBody": true
 }
